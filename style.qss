@@ -1,0 +1,141 @@
+QMainWindow {
+    background: #3C1C5B;
+}
+
+QFrame {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+QTabWidget {
+    background-color: #EFD2FD;
+}
+
+QHeaderView::section {
+    background-color: #FFFFFF;
+    color: black;
+    padding-left: 4px;
+    border: 1px solid #FFFFFF;
+    height: 50px;
+    padding: 0px;
+}
+
+QTreeWidget {
+    color: #000000;
+    background-color: #F4EAFF;
+    selection-background-color: transparent;   /* If we remove this line, the background color becomes blue  */
+}
+
+QTreeWidget::item {
+    height: 50px;
+}
+
+QTreeWidget::item:selected {
+    background-color: #CCD1FF;
+}
+
+QPushButton[accessibleName="reset_or_undo_button"] {
+    border-radius: 5px;
+    background-color: #EBD9FF;
+    padding: 20px;
+}
+
+QPushButton[accessibleName="load_or_save_button"] {
+    border-radius: 5px;
+    background-color: #EBD9FF;
+    padding: 20px;
+}
+
+QPushButton[accessibleName="tab_button"] {
+    border-radius: 5px;
+    background-color: #EBD9FF;
+    padding: 20px;
+}
+
+QPushButton:disabled{
+    background-color: #F7F0FF;
+    padding: 20px;
+    font-size: 12px;
+    color: gray;
+}
+
+QGraphicsView {
+    background-color: #6D6389;
+    border-radius: 10px;
+}
+
+
+QTabBar::tab {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+QLabel {
+    color: black;
+}
+
+QLabel[accessibleName="second_title"] {
+    color: #6D6389;
+}
+
+QSlider::groove:horizontal {
+    border: 1px solid #bbb;
+    background: white;
+    height: 10px;
+    border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+    background: qlineargradient(x1: 0, y1: 0,    x2: 0, y2: 1,
+        stop: 0 #66e, stop: 1 #bbf);
+    background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+        stop: 0 #bbf, stop: 1 #55f);
+    border: 1px solid #777;
+    height: 10px;
+    border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+    background: #fff;
+    border: 1px solid #777;
+    height: 10px;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #eee, stop:1 #ccc);
+    border: 1px solid #777;
+    width: 13px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #fff, stop:1 #ddd);
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+    background: #bbb;
+    border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+    background: #eee;
+    border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+    background: #eee;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
